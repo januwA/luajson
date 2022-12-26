@@ -8,6 +8,11 @@ $ cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
 $ cmake --build build --config Release
 ```
 
+Provide lua include directory and lib directory
+```
+$ cmake -DCMAKE_BUILD_TYPE=Release -DLUA_INCLUDE_DIR="D:\program\lua" -DLUA_LIB_DIR="D:\program\lua\build\Release" -S. -Bbuild
+```
+
 ## Example
 ```lua
 local json = require "luajson"
